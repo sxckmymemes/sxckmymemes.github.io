@@ -15,7 +15,8 @@
 1. t3
    1. sub3.1
    1. sub3.2
-[link text] (https://yandex.ru)
+   
+Ссылка: [https://yandex.ru
 
 - [x]
 - [ ]
