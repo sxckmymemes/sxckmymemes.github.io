@@ -16,7 +16,7 @@
    1. sub3.1
    1. sub3.2
    
-Ссылка: [https://yandex.ru]
+Ссылка: [yandex](https://yandex.ru)
 
 - [x]
 - [ ]
