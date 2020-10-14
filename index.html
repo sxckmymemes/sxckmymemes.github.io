@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fff</title>
+</head>
+<meta charset="utf-8">
+<script type="text/javascript">
+	window.onload = () => {
+	fetch("https://api.github.com/users/sxckmymemes/repos")
+		.then(resp => resp.json())
+		.then(answ => {
+			for (repo of answ) {
+				let li = document.createElement("li"),
+				a = document.createElement("a");
+
+			a.href = repo.clone_url;
+			a.innerText = repo.full_name.replace("sxckmymemes/", "");
+			a.target = "blank";
+
+			li.appendChild(a);
+			document
+				.querySelector("#repos_list")
+				.appendChild(li);
+		}
+	})
+}
+</script>
+<body>
+<ul id="repos_list"></ul>
+
+</body>
+</html>
